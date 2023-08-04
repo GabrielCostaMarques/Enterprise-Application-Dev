@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gabriel\\Source\\Repos\\2TDST\\Fiap.HelloWorld\\Fiap.HelloWorld.UI\\Fiap.HelloWorld.UI.csproj",
+      "projectUniqueName": "C:\\Users\\Gabriel\\Source\\Repos\\Enterprise-Application-Dev\\2TDST\\Fiap.HelloWorld\\Fiap.HelloWorld.UI\\Fiap.HelloWorld.UI.csproj",
       "projectName": "Fiap.HelloWorld.UI",
-      "projectPath": "C:\\Users\\Gabriel\\Source\\Repos\\2TDST\\Fiap.HelloWorld\\Fiap.HelloWorld.UI\\Fiap.HelloWorld.UI.csproj",
+      "projectPath": "C:\\Users\\Gabriel\\Source\\Repos\\Enterprise-Application-Dev\\2TDST\\Fiap.HelloWorld\\Fiap.HelloWorld.UI\\Fiap.HelloWorld.UI.csproj",
       "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gabriel\\Source\\Repos\\2TDST\\Fiap.HelloWorld\\Fiap.HelloWorld.UI\\obj\\",
+      "outputPath": "C:\\Users\\Gabriel\\Source\\Repos\\Enterprise-Application-Dev\\2TDST\\Fiap.HelloWorld\\Fiap.HelloWorld.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
