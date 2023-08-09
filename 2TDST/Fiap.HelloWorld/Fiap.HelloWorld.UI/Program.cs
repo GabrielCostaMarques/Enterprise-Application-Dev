@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Fiap.HelloWorld.UI;
 using Fiap.HelloWorld.UI.Models;
+using System.Globalization;
 
 Console.WriteLine("Hello, World!");
 
@@ -25,3 +26,15 @@ Cachorro dog = new Cachorro(5,15,"Brutus")
 
 Console.WriteLine($"Nome:{dog.Nome}, Peso{dog.Peso}, Idade: {dog.Idade}, Dono: {dog.Dono}");
 //Teste de git
+
+//fazer o aluno andar
+
+aluno.Andar();
+aluno.Andar("Escola");
+
+
+//Setar genero do aluno
+aluno.Genero = Genero.Masculino;
+//Exibir
+Console.WriteLine(aluno.Genero);
+

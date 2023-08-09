@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fiap.HelloWorld.UI.Models
 {
-    public class Pessoa
+    public abstract class Pessoa
     {
         //Atributos
         private string _nome;
@@ -27,5 +27,18 @@ namespace Fiap.HelloWorld.UI.Models
             set { _idade = value; }
         }
 
+        //métodos
+        public abstract void Trabalhar();
+
+        // "Virtual" permite a sobrescrita do método que esta na classe aluno
+        public virtual void Andar()
+        {
+            Console.WriteLine("pessoa andando");
+        }
+
+        public void Andar(string destinos)
+        {
+            Console.WriteLine($"Andando ate o {destinos}");
+        }
     }
 }
