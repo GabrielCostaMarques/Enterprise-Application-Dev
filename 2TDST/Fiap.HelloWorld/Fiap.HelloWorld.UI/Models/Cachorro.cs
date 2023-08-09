@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Fiap.HelloWorld.UI.Models
 {
-    internal class Cachorro : Animal
+
+    internal class Cachorro : Animal, IMamifero
     {
+
+
 
         public string Nome { get; set; }
         public string Raca { get; set; }
@@ -28,6 +31,16 @@ namespace Fiap.HelloWorld.UI.Models
             this.Raca = Raca;
             this.Dono = Dono;
 
+        }
+
+        public void Amamentar()
+        {
+            Console.WriteLine("Cachorro Amamentando");
+        }
+
+        public void Parir()
+        {
+            Console.WriteLine("Cachorro Parindo");
         }
     }
 }

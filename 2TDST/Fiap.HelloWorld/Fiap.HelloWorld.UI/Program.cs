@@ -38,3 +38,25 @@ aluno.Genero = Genero.Masculino;
 //Exibir
 Console.WriteLine(aluno.Genero);
 
+//Interfaces começam com a letra "I"
+
+//Criar uma lista de cachorro
+IList<Cachorro>lista = new List<Cachorro>();
+
+//Adicionar Dois cachorros na lista
+var dog1 = new Cachorro(15, 2, "Pandora");
+var dog2 = new Cachorro(2, 20, "Caramelo");
+
+lista.Add(dog1);
+lista.Add(dog2);
+
+
+//Exibir quantidade 
+Console.WriteLine($"Quantidade de cachorro é: {lista.Count()}");
+
+//Exibir Dados
+for (int i = 0; i < 2; i++)
+{
+    Console.WriteLine($"Nome: {lista[i].Nome} Idade: {lista[i].Idade}");
+   
+}
