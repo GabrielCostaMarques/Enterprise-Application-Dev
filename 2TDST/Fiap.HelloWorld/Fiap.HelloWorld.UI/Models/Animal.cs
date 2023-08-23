@@ -12,14 +12,11 @@ namespace Fiap.HelloWorld.UI.Models
         public int Idade { get; set; }
         public float Peso { get; set; }
 
-        //Criar construtor com Peso e Idade
-
-        public Animal (int idade, float peso)
+        //Criar um construtor com Peso e Idade
+        public Animal(float peso, int idade)
         {
             Idade = idade;
             Peso = peso;
         }
-    }                                   
-
-
+    }
 }

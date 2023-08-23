@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Fiap.HelloWorld.UI.Models
+namespace Fiap.Banco.Model
 {
-    internal interface IMamifero
+    internal interface IContaInvestimento
     {
-        void Amamentar(int quantidade);
-        void Parir();
+        decimal CalculaRetornoInvestimento();
     }
 }

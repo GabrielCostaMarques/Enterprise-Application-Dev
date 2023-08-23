@@ -13,6 +13,8 @@ namespace Fiap.HelloWorld.UI.Models
         private int _idade;
 
         //Propriedades (Getters e Setters)
+        public Genero Genero { get; set; }
+
         public string Cpf { get; set; }
 
         public string Nome 
@@ -27,18 +29,26 @@ namespace Fiap.HelloWorld.UI.Models
             set { _idade = value; }
         }
 
-        //métodos
+        //Métodos
         public abstract void Trabalhar();
 
-        // "Virtual" permite a sobrescrita do método que esta na classe aluno
+        //virtual -> permite a sobrescrita
         public virtual void Andar()
         {
-            Console.WriteLine("pessoa andando");
+            Console.WriteLine("Pessoa andando");
         }
 
-        public void Andar(string destinos)
+        public void Andar(string destino)
         {
-            Console.WriteLine($"Andando ate o {destinos}");
+            //validar se o destino existe, se não existir lançar uma exception
+
+            Console.WriteLine($"Andando até {destino}");
         }
+    }//class
+
+    public enum Genero
+    {
+        Masculino, Feminino, Outros
     }
-}
+
+}//namespace

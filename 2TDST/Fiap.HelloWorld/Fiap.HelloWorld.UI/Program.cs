@@ -1,7 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Fiap.HelloWorld.UI;
 using Fiap.HelloWorld.UI.Models;
-using System.Globalization;
 
 Console.WriteLine("Hello, World!");
 
@@ -16,47 +15,52 @@ aluno.Cpf = "1234234";
 Console.WriteLine(aluno.Nome);
 Console.WriteLine(aluno.Cpf);
 
-
-//Instanciar Cachorro
-
-Cachorro dog = new Cachorro(5,15,"Brutus")
+//Instanciar um Cachorro
+Cachorro dog = new Cachorro(15, 5, "Brutus")
 {
-    Dono="Gabriel"
+    Dono = "Thiago"
 };
 
-Console.WriteLine($"Nome:{dog.Nome}, Peso{dog.Peso}, Idade: {dog.Idade}, Dono: {dog.Dono}");
-//Teste de git
+//Exibir o nome, peso, idade e dono
+Console.WriteLine($"Nome: {dog.Nome}, Peso: {dog.Peso}, Idade: {dog.Idade}, Dono: {dog.Dono}");
 
-//fazer o aluno andar
+dog.Idade = 10;
+Console.WriteLine(dog.Idade);
 
+//Fazer o aluno andar!
 aluno.Andar();
-aluno.Andar("Escola");
+aluno.Andar("FIAP");
 
-
-//Setar genero do aluno
+//Setar o genero do aluno
 aluno.Genero = Genero.Masculino;
-//Exibir
+//Exibir o genero
 Console.WriteLine(aluno.Genero);
 
-//Interfaces começam com a letra "I"
+//Criar uma lista de Cachorro
+IList<Cachorro> lista = new List<Cachorro>();
 
-//Criar uma lista de cachorro
-IList<Cachorro>lista = new List<Cachorro>();
-
-//Adicionar Dois cachorros na lista
-var dog1 = new Cachorro(15, 2, "Pandora");
-var dog2 = new Cachorro(2, 20, "Caramelo");
+//Adicionar 2 dogs na lista
+var dog1 = new Cachorro(15, 2, "Marrie");
+var dog2 = new Cachorro(5, 8, "Rex");
 
 lista.Add(dog1);
 lista.Add(dog2);
 
+//Exibir a quantidade de dogs na lista
+Console.WriteLine(lista.Count);
 
-//Exibir quantidade 
-Console.WriteLine($"Quantidade de cachorro é: {lista.Count()}");
-
-//Exibir Dados
-for (int i = 0; i < 2; i++)
+//Exibir os dados dos dogs da lista
+foreach (var c in lista)
 {
-    Console.WriteLine($"Nome: {lista[i].Nome} Idade: {lista[i].Idade}");
-   
+    Console.WriteLine($"Nome: {c.Nome}, Idade: {c.Idade}, Raça: {c.Raca} ");
+}
+
+//Chamar o método amamentar (tratar a exception)
+try
+{
+    dog.Amamentar(-1);
+}
+catch (ArgumentException e) 
+{
+    Console.WriteLine(e.Message);
 }
